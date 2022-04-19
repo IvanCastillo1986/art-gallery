@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
-    <link rel="stylesheet" href="pokedex.css" >
-</head>
-<body>
+import React from 'react'
+import './pokedex.css'
+
+export default function Pokedex() {
     
+    return (
     <div class='PokedexPage'>
 
         <h1>Pokedex created with vanillaCSS</h1>
@@ -25,6 +20,7 @@
             </div>
             <div class='EmptySpace1'></div>
         </div>
+
         <div class='Pokedex'>
             <div class='LeftHalf'>
                 <div class='Console'>
@@ -68,6 +64,7 @@
                 </div>
                 <div class='Separator'></div>
             </div>
+
             <div class='RightHalf'>
                 <div class='EmptySpace2'></div>
                 <div class='BlackBox border'></div>
@@ -87,7 +84,9 @@
 
             </div>
         </div>
-
     </div>
-</body>
-</html>
+    )
+}
+
+    
+    
