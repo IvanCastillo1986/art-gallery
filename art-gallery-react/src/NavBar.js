@@ -1,6 +1,7 @@
 import React from 'react'
-import './styles/navBar.scss'
 import { Link } from 'react-router-dom'
+
+import './styles/navBar.scss'
 
 
 
@@ -8,9 +9,11 @@ export default function NavBar() {
 
     return (
         <div className='navBar'>
-            <Link to="/artgallery/css" >CSS</Link>
+            <Link to="/" >Art Gallery</Link>
             {" | "}
-            <Link to="/artgallery/svg" >SVG</Link>
+            <Link to="/css" >CSS</Link>
+            {" | "}
+            <Link to="/svg" >SVG</Link>
         </div>
     )
 }

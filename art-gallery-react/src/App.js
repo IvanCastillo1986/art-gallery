@@ -1,9 +1,9 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 import './App.css';
 import NavBar from './NavBar'
-import ArtGallery from './ArtGallery'
+import Home from './components/Home';
 import CSS from './components/CSS';
 import SVG from './components/SVG';
 
@@ -13,7 +13,13 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <ArtGallery />
+
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="css" element={<CSS/>} />
+        <Route path="svg" element={<SVG/>} />
+      </Routes>
+      
     </div>
   );
 }
