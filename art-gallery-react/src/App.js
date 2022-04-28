@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom'
 
-import './App.css';
+import './styles/App.scss';
 import NavBar from './NavBar'
 import Home from './components/Home';
 import CSS from './components/CSS';
@@ -14,11 +14,13 @@ function App() {
     <div className="App">
       <NavBar />
 
+      <main>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="css" element={<CSS/>} />
         <Route path="svg" element={<SVG/>} />
       </Routes>
+      </main>
       
     </div>
   );

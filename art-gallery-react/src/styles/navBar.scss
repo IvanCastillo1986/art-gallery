@@ -1,0 +1,20 @@
+.navBar {
+
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: #a9fdd8;
+    color: yellow;
+    height: 40px;
+    box-shadow: 0 10px 10px 5px rgb(137, 85, 117);
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    &__home {
+
+    }
+
+}

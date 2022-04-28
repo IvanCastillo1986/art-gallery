@@ -9,7 +9,7 @@ export default function NavBar() {
 
     return (
         <div className='navBar'>
-            <Link to="/" >Art Gallery</Link>
+            <Link to="/" className="navBar__home">Art Gallery</Link>
             {" | "}
             <Link to="/css" >CSS</Link>
             {" | "}
