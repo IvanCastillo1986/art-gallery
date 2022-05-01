@@ -1,0 +1,6 @@
+Future implementations for Art Gallery:
+
+
+
+-Add a test for header, which includes an API call
+-Add a header that will display a random quote from quotes API.
