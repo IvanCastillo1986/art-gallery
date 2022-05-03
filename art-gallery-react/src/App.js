@@ -2,10 +2,10 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom'
 
 import './styles/App.scss';
-import NavBar from './NavBar'
-import Home from './components/Home';
-import CSS from './components/CSS';
-import SVG from './components/SVG';
+import NavBar from './layout/navBar/NavBar'
+import Home from './pages/home/Home';
+import CSS from './pages/css/CSS';
+import SVG from './pages/svg/SVG';
 
 
 
