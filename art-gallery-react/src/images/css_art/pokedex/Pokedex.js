@@ -1,87 +1,90 @@
 import React from 'react'
-import './pokedex.css'
+import './pokedex.scss'
+
 
 export default function Pokedex() {
     
     return (
-    <div class='PokedexPage'>
-
+    <div className='pokedexPage'>
         <h1>Pokedex created with vanillaCSS</h1>
+    
+        <div className='pokedexContainer'>
 
-        <div class='TopBar'>
-            <div class='Camera border light'>
-                <div class='Glare1'></div>
-                <div class='Glare2'></div>
+            <div className='topBar'>
+                <div className='camera border light'>
+                    <div className='glare1'></div>
+                    <div className='glare2'></div>
+                </div>
+                <div className='lightContainer'>
+                    <div className='light firstLight'></div>
+                    <div className='light secondLight'></div>
+                    <div className='light thirdLight'></div>
+                </div>
+                <div className='emptySpace1'></div>
             </div>
-            <div class='LightContainer'>
-                <div class='light FirstLight'></div>
-                <div class='light SecondLight'></div>
-                <div class='light ThirdLight'></div>
-            </div>
-            <div class='EmptySpace1'></div>
-        </div>
 
-        <div class='Pokedex'>
-            <div class='LeftHalf'>
-                <div class='Console'>
-                    <div class='ScreenPlate border shadow'>
-                        <div class='plateTop'>
-                            <div class='screenLight'></div>
-                            <div class='screenLight'></div>
+            <div className='pokedex'>
+                <div className='leftHalf'>
+                    <div className='console'>
+                        <div className='screenPlate border shadow'>
+                            <div className='plateTop'>
+                                <div className='screenLight'></div>
+                                <div className='screenLight'></div>
+                            </div>
+                            <div className='screen border'></div>
+                            <div className='plateBottom'>
+                                <div className='bottomLight screenLight'></div>
+                                <div className='plateSpeaker'>
+                                    <div className='speakerDiv'></div>
+                                    <div className='speakerDiv'></div>
+                                    <div className='speakerDiv'></div>
+                                    <div className='speakerDiv'></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class='Screen border'></div>
-                        <div class='plateBottom'>
-                            <div class='screenLight bottomLight'></div>
-                            <div class='plateSpeaker'>
-                                <div class='speakerDiv'></div>
-                                <div class='speakerDiv'></div>
-                                <div class='speakerDiv'></div>
-                                <div class='speakerDiv'></div>
+                        <div className='nesController'>
+                            <div className='joystickContainer'>
+                                <div className='joystick border shadow'></div>
+                            </div>
+                            <div className='buttonHolder'>
+                                <div className='buttonPair1'>
+                                    <div className='button1 pause border'></div>
+                                    <div className='button2 pause border'></div>
+                                </div>
+                                <div className='greenSquare border'></div>
+                            </div>
+                            <div className='dPadContainer'>
+                                <div className='dPad'>
+                                    <div className='innerCircle'></div>
+                                    <div className='dPad top'></div>
+                                    <div className='dPad right'></div>
+                                    <div className='dPad bottom'></div>
+                                    <div className='dPad left'></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class='NESController'>
-                        <div class='JoystickContainer'>
-                            <div class='Joystick border shadow'></div>
-                        </div>
-                        <div class='ButtonHolder'>
-                            <div class='ButtonPair1'>
-                                <div class='Button1 pause border'></div>
-                                <div class='Button2 pause border'></div>
-                            </div>
-                            <div class='GreenSquare border'></div>
-                        </div>
-                        <div class='DpadContainer'>
-                            <div class='Dpad center'>
-                                <div class='innerCircle'></div>
-                                <div class='Dpad top'></div>
-                                <div class='Dpad right'></div>
-                                <div class='Dpad bottom'></div>
-                                <div class='Dpad left'></div>
-                            </div>
-                        </div>
+                    <div className='separator'></div>
+                </div>
+
+                <div className='rightHalf'>
+                    <div className='emptySpace2'></div>
+                    <div className='blackBox border'></div>
+                    <div className='blueBox border shadow'></div>
+                    <div className='buttonPair2'>
+                        <span className='button3 pause border'></span>
+                        <span className='button4 pause border'></span>
                     </div>
-                </div>
-                <div class='Separator'></div>
-            </div>
+                    <div className='boxLightContainer'>
+                        <div className='doubleButtons border radius shadow'></div>
+                        <div className='bigYellow light border'></div>
+                    </div>
+                    <div className='rectangleContainer'>
+                        <div className='rectangle r1 border radius'></div>
+                        <div className='rectangle r2 border radius'></div>
+                    </div>
 
-            <div class='RightHalf'>
-                <div class='EmptySpace2'></div>
-                <div class='BlackBox border'></div>
-                <div class='BlueBox border shadow'></div>
-                <div class='ButtonPair2'>
-                    <span class='Button3 pause border'></span>
-                    <span class='Button4 pause border'></span>
                 </div>
-                <div class='BoxLightContainer'>
-                    <div class='DoubleButtons border radius shadow'></div>
-                    <div class='BigYellow light border'></div>
-                </div>
-                <div class='RectangleContainer'>
-                    <div class='Rectangle R1 border radius'></div>
-                    <div class='Rectangle R2 border radius'></div>
-                </div>
-
             </div>
         </div>
     </div>

@@ -6,9 +6,9 @@ import NavBar from '../NavBar'
   
 test('render NavBar', () => {
     render(
-    <MemoryRouter>
-        <NavBar />
-    </MemoryRouter>
+        <MemoryRouter>
+            <NavBar />
+        </MemoryRouter>
     )
 })
 test('it has a link to Home view', () => {
