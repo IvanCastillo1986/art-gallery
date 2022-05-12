@@ -11,7 +11,7 @@ export default function NavBar() {
         <nav className='navBar'>
             <Link to="/" className="navBar__home" data-testid="navBar__home">Art Gallery</Link>
             {" | "}
-            <Link to="/css" data-testid="navBar__css">CSS</Link>
+            <Link to="/css/list" data-testid="navBar__css">CSS</Link>
             {" | "}
             <Link to="/svg" data-testid="navBar__svg">SVG</Link>
         </nav>
