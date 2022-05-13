@@ -5,10 +5,11 @@ import './styles/App.scss';
 import NavBar from './layout/navBar/NavBar'
 import Home from './pages/home/Home';
 import CSS from './pages/css/CSS';
-import CSSList from './components/CSSList'
+import CSSIntro from './pages/css/components/CSSIntro'
 import Pokedex from './images/css_art/pokedex/Pokedex';
-import CSSPlaceholder from './components/CSSPlaceholder'
+import CSSPlaceholder from './pages/css/components/CSSPlaceholder'
 import SVG from './pages/svg/SVG';
+import NotFound from './pages/not-found/NotFound'
 
 
 
@@ -37,7 +38,7 @@ function App() {
   //   },
   // ];
 
-  
+
   return (
     <div className="App">
       <NavBar />
@@ -45,12 +46,9 @@ function App() {
       <main>
       <Routes>
         <Route path="/" element={<Home message="This is a message" />} />
-        <Route path="css" element={<CSS/>} >
-          <Route path="list" element={<CSSList />} />
-          <Route path="pokedex" element={<Pokedex />} />
-          <Route path="placeholder" element={<CSSPlaceholder />} />
-        </Route>
+        <Route path="css/*" element={<CSS/>} />
         <Route path="svg" element={<SVG/>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       </main>
       
@@ -59,3 +57,5 @@ function App() {
 }
 
 export default App;
+
+// Leaving off the "/" from the beginning of paths is what tells React Router to make the path relative

@@ -1,22 +1,28 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+import CSSIntro from './components/CSSIntro'
+import CSSPlaceholder from './components/CSSPlaceholder'
+import Pokedex from '../../images/css_art/pokedex/Pokedex'
+import NotFound from '../not-found/NotFound'
 
 import './CSS.scss'
 
 
 
 export default function CSS() {
-    
+
+    // if the page is rendering any artwork component, include footer with back to CSS button
+    // else, render Intro component
 
     return (
         <div className='css' >
-            <h2>Welcome to the CSS Shop, a subsidiary of Art Gallery</h2>
-            <p>Here we have the world's goofiest selection of CSS masterpieces.</p>
-            <p>We're way better than SVGs. Just think of how much time it took to draw them.</p>
-            <p>All of that code. They don't have easy programs like Inkscape to create these!</p>
-            <p>Which carefully keycrafted work of art would you like to peruse?</p>
 
-            <Outlet />
+            <Routes>
+                <Route path="/" element={<CSSIntro />} />
+                <Route path="pokedex" element={<Pokedex />} />
+                <Route path="placeholder" element={<CSSPlaceholder />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
 
         </div>
     )
@@ -27,4 +33,4 @@ export default function CSS() {
 
 
 
-// The <Outlet /> component is used as a Placeholder for child component (whichever child is routed by URL)
+// The <Outlet /> component is used as a placeholder for child component (whichever child is routed by URL)

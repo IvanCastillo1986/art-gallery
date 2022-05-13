@@ -14,7 +14,7 @@ export default function Home(props) {
         <h3>Which category would you like to browse?</h3>
         <p>{props.message}</p>
 
-        <Link to="css/list">CSS</Link>
+        <Link to="css">CSS</Link>
         {' '}
         <Link to="svg">SVG</Link>
         
