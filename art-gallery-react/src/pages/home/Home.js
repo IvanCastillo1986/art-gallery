@@ -8,11 +8,14 @@ export default function Home(props) {
 
 
   return (
-    <div className='Home'>
-        <h1>Welcome to the Art Gallery!</h1>
+    <div className='home'>
+        <h1 className='home__title'>Welcome to Coder's Corner!</h1>
         <h3>We're stocked with the latest in goofy masterpieces from the world's goofiest artists.</h3>
+        <p>{props.about}</p>
+        <p>The art on this website is created with code.</p>
+        <p>Whether it's drawn with CSS, SVG, or even bitmap traces, we've got your niche here!</p>
+        <p>Pixel art friendly!</p>
         <h3>Which category would you like to browse?</h3>
-        <p>{props.message}</p>
 
         <Link to="css">CSS</Link>
         {' '}

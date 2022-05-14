@@ -1,0 +1,21 @@
+.css {
+
+    .intro {
+        &__contentList {
+            a {
+                display: block;
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: center;
+
+        &__button {
+
+        }
+    }
+}

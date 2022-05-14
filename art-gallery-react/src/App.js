@@ -45,7 +45,9 @@ function App() {
 
       <main>
       <Routes>
-        <Route path="/" element={<Home message="This is a message" />} />
+        <Route path="/" 
+          element={<Home about={'Our site focuses on bringing electronic art to viewers.'}/>} 
+        />
         <Route path="css/*" element={<CSS/>} />
         <Route path="svg" element={<SVG/>} />
         <Route path="*" element={<NotFound />} />
@@ -59,3 +61,11 @@ function App() {
 export default App;
 
 // Leaving off the "/" from the beginning of paths is what tells React Router to make the path relative
+
+// Use the <Outlet> component within the child routes to tell them where in the parent Route it should
+// render the nested child Route 
+// (only if you're declaring it outside of the child component itself, such as in the App parent component)
+// If the app's location matches the nested Route's path, this Outlet component will render the Route's 
+// element. 
+// Otherwise, the Outlet component will render null.
+

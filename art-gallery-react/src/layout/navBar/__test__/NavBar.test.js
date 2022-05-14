@@ -13,7 +13,7 @@ test('render NavBar', () => {
 })
 test('it has a link to Home view', () => {
     const {getByText} = render(<NavBar />, {wrapper: MemoryRouter})
-    expect(getByText('Art Gallery')).toBeInTheDocument()
+    expect(getByText('Code Corner')).toBeInTheDocument()
 })
 test('it has a link to CSS view', () => {
     const {getByText} = render(<NavBar />, {wrapper: MemoryRouter})
