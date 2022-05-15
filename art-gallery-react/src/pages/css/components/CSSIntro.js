@@ -8,7 +8,7 @@ import '../CSS.scss'
 export default function CSSIntro() {
 
 
-  const display = cssArtList.map(el => 
+  const links = cssArtList.map(el => 
     <Link to={el.urlPath} key={el.name} >
       {el.name}
     </Link>
@@ -25,8 +25,8 @@ export default function CSSIntro() {
       <p>All of that code. They don't have easy programs like Inkscape to create these!</p>
       <p>Which carefully keycrafted work of art would you like to peruse?</p>
 
-      <ul className='intro__contentList'>
-        {display}
+      <ul className='intro__contentList' data-testid='intro__contentList'>
+        {links}
       </ul>
 
     </div>

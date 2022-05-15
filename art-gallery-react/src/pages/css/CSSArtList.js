@@ -4,7 +4,7 @@ export const cssArtList = [
         urlPath: 'pokedex',
     },
     {
-        name: 'Placeholder',
+        name: 'CSSPlaceholder',
         urlPath: 'placeholder',
     },
 ]

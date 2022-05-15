@@ -45,7 +45,7 @@ function App() {
 
       <main>
       <Routes>
-        <Route path="/" 
+        <Route index
           element={<Home about={'Our site focuses on bringing electronic art to viewers.'}/>} 
         />
         <Route path="css/*" element={<CSS/>} />
