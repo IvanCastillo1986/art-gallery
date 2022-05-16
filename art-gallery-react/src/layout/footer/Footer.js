@@ -1,6 +1,5 @@
 import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import './Footer.scss'
 
 
 
@@ -23,3 +22,5 @@ export default function CSSFooter() {
         </div>
     )
 }
+
+// Added styling in CSS.scss

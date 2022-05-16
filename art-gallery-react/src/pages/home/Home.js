@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './Home.scss'
 
 
 
@@ -15,11 +16,13 @@ export default function Home(props) {
         <p>The art on this website is created with code.</p>
         <p>Whether it's drawn with CSS, SVG, or even bitmap traces, we've got your niche here!</p>
         <p>Pixel art friendly!</p>
-        <h3>Which category would you like to browse?</h3>
+        <h3 className='home__prompt'>Which category would you like to browse?</h3>
 
-        <Link to="css">CSS</Link>
+        <div className="home__linkDiv">
+          <Link to="css">CSS</Link>
         {' '}
-        <Link to="svg">SVG</Link>
+          <Link to="svg">SVG</Link>
+        </div>
         
     </div>
   )

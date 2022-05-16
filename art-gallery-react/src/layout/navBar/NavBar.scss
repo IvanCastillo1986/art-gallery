@@ -1,16 +1,43 @@
 .navBar {
 
     display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
+    justify-content: space-around;
+    padding: 20px 0 20px 0;
     background-color: #a9fdd8;
-    color: yellow;
+    color: #cec5fa;
     height: 40px;
     box-shadow: 0 10px 10px 5px #8a5676;
     
     a {
         text-decoration: none;
-        color: white;
+        color: #fef1d2;
+        width: 100%;
+        height: 60px;
+        position: relative;
+        top: -20px;
+        padding-top: 20px;
+
+        text-shadow: 
+        1px -1px 2px #009454,
+        1px 1px 2px #009454,
+        -1px -1px 2px #009454,
+        -1px 1px 2px #009454,
+        ;
+
+        &:hover {
+            background-color: green;;
+        }
+    }
+    .line {
+        color: #fef1d2;
+        background-color: #8a5676;
+        width: 30px;
+        height: 80px;
+        position: relative;
+        top: -20px;
+    }
+    .linkDiv {
+        width: 100%;
     }
 
     &__home {

@@ -14,6 +14,7 @@ export default function CSS() {
 
     const location = useLocation()
 
+    // How to get this to work, to render different routes
     const artRoute = cssArtList.map(el => 
         <Route 
             path={`${el.urlPath}`} 
