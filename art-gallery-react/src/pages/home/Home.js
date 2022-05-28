@@ -10,7 +10,7 @@ export default function Home(props) {
 
   return (
     <div className='home'>
-        <h1 className='home__title'>Welcome to Coder's Corner!</h1>
+        <h1 className='home__title'>Welcome to Code Canvas Corner!</h1>
         <h3>We're stocked with the latest in goofy masterpieces from the world's goofiest artists.</h3>
         <p>{props.about}</p>
         <p>The art on this website is created with code.</p>
@@ -20,8 +20,10 @@ export default function Home(props) {
 
         <div className="home__linkDiv">
           <Link to="css">CSS</Link>
-        {' '}
+          {' '}
           <Link to="svg">SVG</Link>
+          {' '}
+          <Link to="canvas">Canvas</Link>
         </div>
         
     </div>

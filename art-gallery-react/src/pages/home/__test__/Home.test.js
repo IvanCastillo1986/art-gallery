@@ -13,7 +13,7 @@ describe('Home Page set up', () => {
   
     test('it has an element to display welcome message', () => {
       const message = render(<Home />, {wrapper: MemoryRouter}).getByText
-      expect(message('Welcome to Coder\'s Corner!')).toBeInTheDocument()
+      expect(message('Welcome to Code Canvas Corner!')).toBeInTheDocument()
     })
   
     test('it has an element to display welcome sentence', () => {

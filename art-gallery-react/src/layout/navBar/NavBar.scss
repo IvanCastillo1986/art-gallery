@@ -25,7 +25,14 @@
         ;
 
         &:hover {
-            background-color: green;;
+            background-color: green;
+            
+            text-shadow: 
+            1px -1px 2px #8a5676,
+            1px 1px 2px #8a5676,
+            -1px -1px 2px #8a5676,
+            -1px 1px 2px #8a5676,
+            ;
         }
     }
     .line {

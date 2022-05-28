@@ -23,3 +23,7 @@ test('it has a link to SVG view', () => {
     const link = render(<NavBar />, {wrapper: MemoryRouter}).getByTestId
     expect(link('navBar__svg')).toBeInTheDocument()
 })
+test('it has a link to Canvas view', () => {
+    const {getByText} = render(<NavBar />, {wrapper: MemoryRouter})
+    expect(getByText('Canvas')).toBeInTheDocument()
+})
