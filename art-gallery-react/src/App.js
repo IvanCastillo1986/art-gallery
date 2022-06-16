@@ -51,7 +51,7 @@ function App() {
         />
         <Route path="css/*" element={<CSS/>} />
         <Route path="svg" element={<SVG/>} />
-        <Route path="canvas" element={<Canvas />} />
+        <Route path="canvas/*" element={<Canvas />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       </main>
