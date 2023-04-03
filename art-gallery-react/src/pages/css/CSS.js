@@ -3,8 +3,9 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import CSSIntro from './components/CSSIntro'
 import CSSPlaceholder from './components/CSSPlaceholder'
 import Pokedex from '../../images/css_art/pokedex/Pokedex'
+import NordstromSubscription from '../../images/css_art/nordstrom/NordstromSubscription'
 import NotFound from '../not-found/NotFound'
-import CSSFooter from '../../layout/footer/Footer'
+import Footer from '../../layout/footer/Footer'
 
 import { cssArtList } from './CSSArtList'
 import './CSS.scss'
@@ -14,7 +15,8 @@ export default function CSS() {
 
     const location = useLocation()
 
-    // How to get this to work, to render different routes
+    // Separation of concerns for routing to different artworks
+    // Figure out how to get it to work
     const artRoute = cssArtList.map(el => 
         <Route 
             path={`${el.urlPath}`} 
@@ -29,7 +31,8 @@ export default function CSS() {
             <Routes>
                 <Route index element={<CSSIntro />} />
                 <Route path="pokedex" element={<div className='artDiv'><Pokedex /></div>} />
-                <Route path="placeholder" element={<div className="artDiv"><CSSPlaceholder /></div>} />
+                <Route path="nordstrom-subscription" element={<div className='artDiv'><NordstromSubscription /></div>} />
+                <Route path="placeholder" element={<div className='artDiv'><CSSPlaceholder /></div>} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
 
@@ -37,8 +40,7 @@ export default function CSS() {
 
             {/* if  location.pathname  is not '/css' then render Footer. 
             useLocation() is invoked in <CSSFooter> component with if() conditional rendering */}
-            {location.pathname === '/css' ? null : <CSSFooter />}
-            {/* <CSSFooter /> */}
+            {location.pathname === '/css' ? null : <Footer pageName='CSS' />}
 
         </div>
     )

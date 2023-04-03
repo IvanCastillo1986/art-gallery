@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 
 
 
-export default function CSSFooter() {
+export default function Footer({ pageName }) {
 
     const navigate = useNavigate()
     const location = useLocation()
@@ -18,7 +18,7 @@ export default function CSSFooter() {
 
     return (
         <div className='footer'>
-            <button className='footer__button' onClick={() => navigate(-1)} >Back to CSS</button>
+            <button className='footer__button' onClick={() => navigate(-1)} >Back to {pageName}</button>
         </div>
     )
 }

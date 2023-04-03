@@ -1,0 +1,55 @@
+.subscription {
+    
+    &__container {
+        position: relative;
+        height: 200px;
+        margin-right: auto;
+        background-color: white;
+    }
+    
+    &__email-form {
+        text-shadow: none;
+        font-weight: 100;
+        font-family: arial, helvetica, sans-serif;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: black;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        
+        label {
+            margin-right: 8px;
+            font-size: 10px;
+            font-weight: 600;
+        }
+    }
+    
+    &__email-input {
+        width: 200px;
+        margin-right: 3px;
+        height: 26px;
+        box-sizing: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.243);
+        padding-left: 8px;
+    }
+    &__email-input::placeholder {
+        font-weight: 100;
+        font-size: 8px;
+        opacity: .5;
+    }
+
+    &__button {
+        background-color: black;
+        color: white;
+        width: 200px;
+        height: 26px;
+        border: none;
+        vertical-align: middle;
+        font-size: 8px;
+    }
+
+
+
+}
