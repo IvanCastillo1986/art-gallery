@@ -24,6 +24,10 @@ export default function NavBar() {
 
             <Link to="canvas" data-testid="navBar__canvas"><div className='linkDiv'>Canvas</div></Link>
             
+            <span className='line'></span>
+
+            <Link to="login" data-testid="navBar__canvas"><div className='linkDiv'>Log In</div></Link>
+            
         </nav>
     )
 }

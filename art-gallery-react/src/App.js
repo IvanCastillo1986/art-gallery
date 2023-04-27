@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route, useRoutes } from 'react-router-dom'
+// import { UserContext, UserProvider } from './providers/UserProvider'
 
 import './styles/App.scss';
 import NavBar from './layout/navBar/NavBar'
@@ -10,6 +11,7 @@ import Pokedex from './images/css_art/pokedex/Pokedex';
 import CSSPlaceholder from './pages/css/components/CSSPlaceholder'
 import SVG from './pages/svg/SVG';
 import Canvas from './pages/canvas/Canvas';
+import Login from './components/login/Login';
 import NotFound from './pages/not-found/NotFound'
 
 
@@ -42,20 +44,22 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar />
+      {/* <UserContext.Provider> */}
+        <NavBar />
 
-      <main>
-      <Routes>
-        <Route index
-          element={<Home about={'Our site focuses on bringing electronic art to viewers.'}/>} 
-        />
-        <Route path="css/*" element={<CSS/>} />
-        <Route path="svg" element={<SVG/>} />
-        <Route path="canvas/*" element={<Canvas />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      </main>
-      
+        <main>
+        <Routes>
+          <Route index
+            element={<Home about={'Our site focuses on bringing electronic art to viewers.'}/>} 
+          />
+          <Route path="css/*" element={<CSS/>} />
+          <Route path="svg" element={<SVG/>} />
+          <Route path="canvas/*" element={<Canvas />} />
+          <Route path="login" element={<Login />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        </main>
+      {/* </UserContext.Provider> */}
     </div>
   );
 }
