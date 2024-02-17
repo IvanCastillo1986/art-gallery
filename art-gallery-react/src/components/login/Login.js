@@ -17,8 +17,8 @@ export default function Login() {
     }
 
     return (
-        <div>
-            <h1>Sign in with Email</h1>
+        <div className='login'>
+            <h1>Sign in with E-mail</h1>
             <form onSubmit={signIn}>
                 <input type='email' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Enter your e-mail' />
                 <input type='password' value={password} onChange={e => setPassword(e.target.value)} placeholder='Enter your password' />
@@ -28,3 +28,4 @@ export default function Login() {
     )
     
 }
+

@@ -11,7 +11,8 @@ import Pokedex from './images/css_art/pokedex/Pokedex';
 import CSSPlaceholder from './pages/css/components/CSSPlaceholder'
 import SVG from './pages/svg/SVG';
 import Canvas from './pages/canvas/Canvas';
-import Login from './components/login/Login';
+import LoginPage from './pages/loginPage/LoginPage';
+import SignUpPage from './pages/signUpPage/SignUpPage';
 import NotFound from './pages/not-found/NotFound'
 
 
@@ -55,7 +56,8 @@ function App() {
           <Route path="css/*" element={<CSS/>} />
           <Route path="svg" element={<SVG/>} />
           <Route path="canvas/*" element={<Canvas />} />
-          <Route path="login" element={<Login />} />
+          <Route path="login" element={<LoginPage />} />
+          <Route path="signup" element={<SignUpPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         </main>
